@@ -6,5 +6,29 @@
         "stream": true
       }
     ]
+  },
+  "silver_bullet_by_casey_edwards": {
+    "sounds": [
+      {
+        "name": "dmcmusicdiscs:silver_bullet_by_casey_edwards",
+        "stream": true
+      }
+    ]
+  },
+  "bury_the_light_by_casey_edwards": {
+    "sounds": [
+      {
+        "name": "dmcmusicdiscs:bury_the_light_by_casey_edwards",
+        "stream": true
+      }
+    ]
+  },
+  "devil_trigger_by_casey_edwards": {
+    "sounds": [
+      {
+        "name": "dmcmusicdiscs:devil_trigger_by_casey_edwards",
+        "stream": true
+      }
+    ]
   }
 }

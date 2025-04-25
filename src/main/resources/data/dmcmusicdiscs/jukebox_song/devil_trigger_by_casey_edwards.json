@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.dmcmusicdiscs.devil_trigger_disc.desc"
+  },
+  "length_in_seconds": 505.0,
+  "sound_event": "dmcmusicdiscs:devil_trigger_by_casey_edwards"
+}

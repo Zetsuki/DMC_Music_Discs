@@ -56,7 +56,9 @@ public class DMCMusicDiscs {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-            event.accept(ModItems.CUSTOM_DISC);
+            event.accept(ModItems.SILVER_BULLET_DISC);
+            event.accept(ModItems.BURY_THE_LIGHT_DISC);
+            event.accept(ModItems.DEVIL_TRIGGER_DISC);
         }
     }
 

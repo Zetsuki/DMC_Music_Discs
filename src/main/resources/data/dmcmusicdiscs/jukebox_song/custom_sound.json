@@ -1,8 +1,0 @@
-{
-  "comparator_output": 15,
-  "description": {
-    "translate": "item.dmcmusicdiscs.custom_sound.desc"
-  },
-  "length_in_seconds": 15.0,
-  "sound_event": "dmcmusicdiscs:custom_sound"
-}

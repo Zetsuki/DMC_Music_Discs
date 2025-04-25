@@ -14,12 +14,28 @@ public class ModItems {
     private final static DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, DMCMusicDiscs.MOD_ID);
 
-    // Item to add
-    public static final RegistryObject<Item> CUSTOM_DISC = ITEMS.register("custom_disc",
+    // Items to add
+    public static final RegistryObject<Item> SILVER_BULLET_DISC = ITEMS.register("silver_bullet_disc",
             () -> new Item(new Item.Properties()
-                    .setId(ITEMS.key("custom_disc"))
+                    .setId(ITEMS.key("silver_bullet_disc"))
                     .stacksTo(1)
-                    .jukeboxPlayable(ModSounds.CUSTOM_SOUND_KEY)
+                    .jukeboxPlayable(ModSounds.SILVER_BULLET_KEY)
+            )
+    );
+
+    public static final RegistryObject<Item> BURY_THE_LIGHT_DISC = ITEMS.register("bury_the_light_disc",
+            () -> new Item(new Item.Properties()
+                    .setId(ITEMS.key("bury_the_light_disc"))
+                    .stacksTo(1)
+                    .jukeboxPlayable(ModSounds.SILVER_BULLET_BY_CASEY_EDWARDS_KEY)
+            )
+    );
+
+    public static final RegistryObject<Item> DEVIL_TRIGGER_DISC = ITEMS.register("devil_trigger_disc",
+            () -> new Item(new Item.Properties()
+                    .setId(ITEMS.key("devil_trigger_disc"))
+                    .stacksTo(1)
+                    .jukeboxPlayable(ModSounds.DEVIL_TRIGGER_KEY)
             )
     );
 
