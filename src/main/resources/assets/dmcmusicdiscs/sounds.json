@@ -1,0 +1,10 @@
+{
+  "silver_bullet" : {
+    "sounds" : [
+      {
+        "name": "dmcmusicdiscs:silver_bullet_by_casey_edwards",
+        "stream": true
+      }
+    ]
+  }
+}

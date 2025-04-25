@@ -1,6 +1,9 @@
 package com.zetsuki.dmc_music_discs;
 
 import com.mojang.logging.LogUtils;
+import com.zetsuki.dmc_music_discs.item.ModItems;
+import com.zetsuki.dmc_music_discs.sound.ModSounds;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -24,10 +27,14 @@ public class DMCMusicDiscs {
 
     public DMCMusicDiscs(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
-        // Register the commonSetup method for modloading
-        modEventBus.addListener(this::commonSetup);
+        // Register the commonSetup method for modload
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        // Registers
+        ModSounds.register(modEventBus);
+        ModItems.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -40,6 +47,9 @@ public class DMCMusicDiscs {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SILVER_BULLET_MUSIC_DISC);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
