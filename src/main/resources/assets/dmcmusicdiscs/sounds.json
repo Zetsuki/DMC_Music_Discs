@@ -1,0 +1,10 @@
+{
+  "custom_sound": {
+    "sounds": [
+      {
+        "name": "dmcmusicdiscs:custom_sound",
+        "stream": true
+      }
+    ]
+  }
+}

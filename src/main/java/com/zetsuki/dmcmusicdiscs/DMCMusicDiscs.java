@@ -2,6 +2,7 @@ package com.zetsuki.dmcmusicdiscs;
 
 import com.mojang.logging.LogUtils;
 import com.zetsuki.dmcmusicdiscs.item.ModItems;
+import com.zetsuki.dmcmusicdiscs.sound.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,6 +35,7 @@ public class DMCMusicDiscs {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

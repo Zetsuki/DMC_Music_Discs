@@ -1,6 +1,7 @@
 package com.zetsuki.dmcmusicdiscs.item;
 
 import com.zetsuki.dmcmusicdiscs.DMCMusicDiscs;
+import com.zetsuki.dmcmusicdiscs.sound.ModSounds;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +19,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .setId(ITEMS.key("custom_disc"))
                     .stacksTo(1)
+                    .jukeboxPlayable(ModSounds.CUSTOM_SOUND_KEY)
             )
     );
 
