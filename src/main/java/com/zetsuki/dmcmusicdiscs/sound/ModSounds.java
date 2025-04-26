@@ -17,34 +17,27 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, DMCMusicDiscs.MOD_ID);
 
-    // Sounds to add
-    public static final RegistryObject<SoundEvent> SILVER_BULLET_BY_CASEY_EDWARDS = SOUND_EVENTS.register("silver_bullet_by_casey_edwards",
-            () -> SoundEvent.createVariableRangeEvent(ResourceLocation
-                    .fromNamespaceAndPath(DMCMusicDiscs.MOD_ID, "silver_bullet_by_casey_edwards")
-            )
-    );
+    public static final RegistryObject<SoundEvent> SILVER_BULLET = registerSound("silver_bullet_by_casey_edwards");
+    public static final RegistryObject<SoundEvent> BURY_THE_LIGHT = registerSound("bury_the_light_by_casey_edwards");
+    public static final RegistryObject<SoundEvent> DEVIL_TRIGGER = registerSound("devil_trigger_by_casey_edwards");
 
-    public static final RegistryObject<SoundEvent> BURY_THE_LIGHT_BY_CASEY_EDWARDS = SOUND_EVENTS.register("bury_the_light_by_casey_edwards",
-            () -> SoundEvent.createVariableRangeEvent(ResourceLocation
-                    .fromNamespaceAndPath(DMCMusicDiscs.MOD_ID, "bury_the_light_by_casey_edwards")
-            )
-    );
+    public static final ResourceKey<JukeboxSong> SILVER_BULLET_KEY = createJukeboxSongKey("silver_bullet_by_casey_edwards");
+    public static final ResourceKey<JukeboxSong> BURY_THE_LIGHT_KEY = createJukeboxSongKey("bury_the_light_by_casey_edwards");
+    public static final ResourceKey<JukeboxSong> DEVIL_TRIGGER_KEY = createJukeboxSongKey("devil_trigger_by_casey_edwards");
 
-    public static final RegistryObject<SoundEvent> DEVIL_TRIGGER_BY_CASEY_EDWARDS = SOUND_EVENTS.register("devil_trigger_by_casey_edwards",
-            () -> SoundEvent.createVariableRangeEvent(ResourceLocation
-                    .fromNamespaceAndPath(DMCMusicDiscs.MOD_ID, "devil_trigger_by_casey_edwards")
-            )
-    );
 
-    // Resource key
-    public static final ResourceKey<JukeboxSong> SILVER_BULLET_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
-            ResourceLocation.fromNamespaceAndPath(DMCMusicDiscs.MOD_ID, "silver_bullet_by_casey_edwards"));
+    private static RegistryObject<SoundEvent> registerSound(String name) {
+        RegistryObject<SoundEvent> sound = SOUND_EVENTS.register(name, () ->
+                SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DMCMusicDiscs.MOD_ID, name))
+        );
+        return sound;
+    }
 
-    public static final ResourceKey<JukeboxSong> SILVER_BULLET_BY_CASEY_EDWARDS_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
-            ResourceLocation.fromNamespaceAndPath(DMCMusicDiscs.MOD_ID, "bury_the_light_by_casey_edwards"));
-
-    public static final ResourceKey<JukeboxSong> DEVIL_TRIGGER_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
-            ResourceLocation.fromNamespaceAndPath(DMCMusicDiscs.MOD_ID, "devil_trigger_by_casey_edwards"));
+    private static ResourceKey<JukeboxSong> createJukeboxSongKey(String name) {
+        ResourceKey<JukeboxSong> key = ResourceKey.create(Registries.JUKEBOX_SONG,
+                ResourceLocation.fromNamespaceAndPath(DMCMusicDiscs.MOD_ID, name));
+        return key;
+    }
 
     // Save all object in SOUND_EVENTS on the event bus
     public static void register(IEventBus eventBus) {
