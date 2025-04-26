@@ -6,7 +6,8 @@ This Minecraft mod adds three iconic music tracks from the Devil May Cry series 
 - **Devil Trigger**
 - **Silver Bullet**
 
-These tracks are now available to be played on Jukeboxes in Minecraft.
+These tracks are now available to be played on Jukeboxes in Minecraft. Bury The Light is a guaranteed drop on 
+Ender Dragon kill, Devil Trigger guaranteed on Wither kill and finally Silver Bullet is a drop on Phantom kill (10% chance).
 
 ## Installation
 
