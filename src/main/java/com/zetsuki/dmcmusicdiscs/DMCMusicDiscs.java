@@ -2,6 +2,7 @@ package com.zetsuki.dmcmusicdiscs;
 
 import com.mojang.logging.LogUtils;
 import com.zetsuki.dmcmusicdiscs.item.ModItems;
+import com.zetsuki.dmcmusicdiscs.loot.ModLootModifiers;
 import com.zetsuki.dmcmusicdiscs.sound.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,6 +37,7 @@ public class DMCMusicDiscs {
 
         ModItems.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -55,7 +57,7 @@ public class DMCMusicDiscs {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+        if (event.getTabKey() == CreativeModeTabs.SEARCH) {
             event.accept(ModItems.SILVER_BULLET_DISC);
             event.accept(ModItems.BURY_THE_LIGHT_DISC);
             event.accept(ModItems.DEVIL_TRIGGER_DISC);
