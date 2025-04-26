@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "dmcmusicdiscs:item/custom_disc"
+    "layer0": "dmcmusicdiscs:item/silver_bullet_disc"
   }
 }

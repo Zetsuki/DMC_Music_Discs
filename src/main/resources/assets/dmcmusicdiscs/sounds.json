@@ -1,12 +1,4 @@
 {
-  "custom_sound": {
-    "sounds": [
-      {
-        "name": "dmcmusicdiscs:custom_sound",
-        "stream": true
-      }
-    ]
-  },
   "silver_bullet_by_casey_edwards": {
     "sounds": [
       {
