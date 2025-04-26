@@ -20,10 +20,18 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start(HolderLookup.Provider registries) {
-        add("disc_from_creeper", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/creeper"))
-                        .and(LootItemRandomChanceCondition.randomChance(0.5f)).build() },
+        add("devil_trigger_from_wither", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/wither"))
+                        .and(LootItemRandomChanceCondition.randomChance(1f)).build() },
                 ModItems.DEVIL_TRIGGER_DISC.get()));
+        add("bury_the_light_from_ender_dragon", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/ender_dragon"))
+                        .and(LootItemRandomChanceCondition.randomChance(1f)).build() },
+                ModItems.BURY_THE_LIGHT_DISC.get()));
+        add("silver_bullet_from_phantom", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/phantom"))
+                        .and(LootItemRandomChanceCondition.randomChance(0.1f)).build() },
+                ModItems.SILVER_BULLET_DISC.get()));
         /*
         this.add("kohlrabi_seeds_from_short_grass",
                 new AddItemModifier(new LootItemCondition[] {

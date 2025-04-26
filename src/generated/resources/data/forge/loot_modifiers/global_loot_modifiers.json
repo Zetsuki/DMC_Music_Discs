@@ -1,6 +1,8 @@
 {
   "entries": [
-    "dmcmusicdiscs:disc_from_creeper"
+    "dmcmusicdiscs:silver_bullet_from_phantom",
+    "dmcmusicdiscs:devil_trigger_from_wither",
+    "dmcmusicdiscs:bury_the_light_from_ender_dragon"
   ],
   "replace": false
 }
