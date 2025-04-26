@@ -1,0 +1,19 @@
+{
+  "type": "dmcmusicdiscs:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "minecraft:entities/ender_dragon"
+        },
+        {
+          "chance": 1.0,
+          "condition": "minecraft:random_chance"
+        }
+      ]
+    }
+  ],
+  "item": "dmcmusicdiscs:bury_the_light_disc"
+}
