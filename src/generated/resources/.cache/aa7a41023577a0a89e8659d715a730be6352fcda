@@ -1,5 +1,5 @@
-// 1.21.5	2025-04-26T17:44:45.3869141	Global Loot Modifiers : dmcmusicdiscs
+// 1.21.5	2025-04-26T18:21:59.6864753	Global Loot Modifiers : dmcmusicdiscs
 fdb1eb6e8bcad6509c1e8cc4b3fd61e0a368611b data/dmcmusicdiscs/loot_modifiers/bury_the_light_from_ender_dragon.json
 8329191414853952e83bc8be9f706d8f9f0fef7d data/dmcmusicdiscs/loot_modifiers/devil_trigger_from_wither.json
-b1e4f9d6b3f2559eedc6f6b5afb78a0d5afacd52 data/dmcmusicdiscs/loot_modifiers/silver_bullet_from_phantom.json
+44cb7ddafbc18cf12b7b5203a8722fa2e4f3449a data/dmcmusicdiscs/loot_modifiers/silver_bullet_from_phantom.json
 9a60f3842dddd493144312beb5cdaff587fd639a data/forge/loot_modifiers/global_loot_modifiers.json
