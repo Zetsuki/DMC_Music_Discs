@@ -6,7 +6,7 @@ This Minecraft mod adds three iconic music tracks from the Devil May Cry series 
 - **Devil Trigger**
 - **Silver Bullet**
 
-Bury The Light is a guaranteed drop on Ender Dragon kill, Devil Trigger guaranteed on Wither kill and finally Silver Bullet is a drop on Phantom kill (10% chance).
+Bury The Light is a guaranteed drop on Ender Dragon kill, Devil Trigger guaranteed on Wither kill and finally Silver Bullet is a drop on Phantom kill (20% chance).
 
 ## Installation
 
